@@ -10,7 +10,7 @@ public class XmlCharacterEscapeHandler implements CharacterEscapeHandler {
     public void escape(char[] ch, int start, int length, boolean isAttVal, Writer out) throws IOException {
         // avoid calling the Writerwrite method too much by assuming
         // that the escaping occurs rarely.
-        // profiling revealed that this is faster than the naive code.
+        // profiling revealed that this is faster than the native code.
         int limit = start + length;
         for (int i = start; i < limit; i++) {
             char c = ch[i];

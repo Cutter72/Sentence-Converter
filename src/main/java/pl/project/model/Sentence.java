@@ -35,11 +35,7 @@ public class Sentence {
 
     public static boolean isValid(String originalText) {
         if (originalText.matches("[\\s]+") ||
-                originalText.matches("") ||
-                originalText.matches("Mr. and \r\n" +
-                        "Ms. Smith \r\n" +
-                        "met Dr. Jekyll \r\n" +
-                        "outside")) {
+                originalText.matches("")) {
             return false;
         }
         return true;
@@ -55,13 +51,13 @@ public class Sentence {
     }
 
     String prepareSentenceToSplit(String originalText) {
-        String preparingTextStepA = originalText.replaceAll("(?<!Mr|Ms|Dr)[.]+", " ");
-        String preparingTextStepB = preparingTextStepA.replaceAll("[!?,:;\\-\\s()]+", " ");
-        return preparingTextStepB.replaceAll("[’]+", "'");
+        String stepA = originalText.replaceAll("[’']+", ""); //delete apostrophes for english words
+        String stepB = stepA.replaceAll("[-+*/,?><';\":\\]\\[}{|=_)(&^%$#@!`~]+", " "); //replace all non letter chars
+        return stepB.replaceAll("\\\\", " ").replaceAll("[\\s]+", " "); //replace all unnecessary whitespaces
     }
 
     List<String> splitSentenceIntoWords(String preparedSentenceText) {
-        String[] words = preparedSentenceText.split("[ ]+");
+        String[] words = preparedSentenceText.split("[\\s]+");
         List<String> wordList = new ArrayList<>(Arrays.asList(words));
         while (wordList.contains("") || wordList.contains(" ")) {
             wordList.remove("");

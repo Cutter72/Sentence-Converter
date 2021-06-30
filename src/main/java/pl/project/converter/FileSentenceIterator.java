@@ -11,7 +11,7 @@ public class FileSentenceIterator implements Iterator<String> {
     public FileSentenceIterator(File inputFile) {
         try {
             scanner = new Scanner(inputFile);
-            scanner.useDelimiter("(?<!Mr|Ms|Dr)[.?!]");
+            scanner.useDelimiter("[.?!]");
         } catch (FileNotFoundException e) {
             throw new RuntimeException(e);
         }
