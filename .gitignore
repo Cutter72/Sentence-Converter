@@ -1,0 +1,10 @@
+.idea/
+*.iml
+target/
+src/main/resources/test_data/actual_CsvStreamWriter.addSentence
+src/main/resources/test_data/actual_CsvStreamWriter.startDocument
+src/main/resources/test_data/actual_XmlStreamWriter.addSentence
+src/main/resources/test_data/actual_XmlStreamWriter.closeDocument
+src/main/resources/test_data/actual_XmlStreamWriter.startDocument
+src/main/resources/test_data/small.csv
+src/main/resources/test_data/small.xml
