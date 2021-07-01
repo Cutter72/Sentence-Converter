@@ -25,4 +25,4 @@ You don't need to install Maven. Simply use the attached `mvnw` ([Maven Wrapper]
 * Przedmiot: Programowanie w języku Java
 * Prowadzący: mgr inż. Kacper Warda
 
-###### W celu przetestowania aplikacji można użyć dołączonych plików `small.in` lub `large.in` z folderu `src/main/resources/sample_data/`
+##### W celu przetestowania aplikacji można użyć dołączonych plików `small.in` lub `large.in` z folderu `src/main/resources/sample_data/`
