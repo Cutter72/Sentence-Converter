@@ -168,7 +168,7 @@ public class SentenceTest {
         //then
         assertFalse(actualA);
         assertFalse(actualB);
-        assertFalse(actualC);
+        assertTrue(actualC);
         assertTrue(actualD);
     }
 
@@ -182,9 +182,9 @@ public class SentenceTest {
         expected.add("a");
         expected.add("because");
         expected.add("Chinese");
-        expected.add("couldn't");
+        expected.add("couldnt");
         expected.add("I");
-        expected.add("isn't");
+        expected.add("isnt");
         expected.add("mother");
         expected.add("my");
         expected.add("perhaps");

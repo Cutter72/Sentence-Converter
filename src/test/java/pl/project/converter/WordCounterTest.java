@@ -17,6 +17,6 @@ public class WordCounterTest {
         WordCounter wordCounter = new WordCounter();
         int actual = wordCounter.findMaxNumberOfWordsInSentence(inputFile.toFile());
         //then
-        assertEquals(33, actual);
+        assertEquals(17, actual);
     }
 }

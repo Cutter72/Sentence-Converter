@@ -52,7 +52,7 @@ public class Sentence {
 
     String prepareSentenceToSplit(String originalText) {
         String stepA = originalText.replaceAll("[’']+", ""); //delete apostrophes for english words
-        String stepB = stepA.replaceAll("[-+*/,?><';\":\\]\\[}{|=_)(&^%$#@!`~]+", " "); //replace all non letter chars
+        String stepB = stepA.replaceAll("[-+*/,?><'.;\":\\]\\[}{|=_)(&^%$#@!`~]+", " "); //replace all non letter chars
         return stepB.replaceAll("\\\\", " ").replaceAll("[\\s]+", " "); //replace all unnecessary whitespaces
     }
 

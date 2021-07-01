@@ -28,10 +28,7 @@ public class FileSentenceIteratorTest {
     @Test
     public void next() {
         //given
-        String expected = "Mr. and \r\n" +
-                "Ms. Smith \r\n" +
-                "met Dr. Jekyll \r\n" +
-                "outside";
+        String expected = "Jeżeli siedzicie w ciemnym pokoju i słyszycie dziwne dźwięki, to może Was przerażać";
         FileSentenceIterator fileSentenceIterator = new FileSentenceIterator(new File(Paths.get("src/main/resources/sample_data/small.in").toAbsolutePath().toString()));
         //when
         String actual = fileSentenceIterator.next();
