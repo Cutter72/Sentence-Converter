@@ -19,3 +19,8 @@ You don't need to install Maven. Simply use the attached `mvnw` ([Maven Wrapper]
 [Maven Wrapper]: https://github.com/takari/maven-wrapper
 
 ### Wykonał Paweł Drelich grupa ININ4_PR1.1 indeks 54589
+
+* Przedmiot: Programowanie w języku Java
+* Prowadzący: mgr inż. Kacper Warda
+
+###### W celu przetestowania aplikacji można użyć dołączonych plików `small.in` lub `large.in` z folderu `src/main/resources/sample_data/`
