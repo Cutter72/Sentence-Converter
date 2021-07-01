@@ -24,6 +24,8 @@ public class CsvConverterImpl implements ConverterInterface {
         csvStreamWriterImpl.startDocument(new WordCounter().findMaxNumberOfWordsInSentence(inputFile));
         System.out.print("Konwertowanie do CSV...");
         int i = 0;
+        int sentenceQuantity = 0;
+        int wordsQuantity = 0;
         while (fileSentenceIterator.hasNext()) {
             Sentence sentence = new Sentence();
             String originalText = fileSentenceIterator.next();
@@ -31,6 +33,8 @@ public class CsvConverterImpl implements ConverterInterface {
                 sentence.generate(originalText);
                 if (sentence.getWordsList().size() > 0) {
                     csvStreamWriterImpl.addSentence(sentence);
+                    sentenceQuantity++;
+                    wordsQuantity += sentence.getWordsList().size();
                     if (i % 100 == 0) {
                         System.out.print('.');
                         if (i % 5000 == 0) {
@@ -41,6 +45,7 @@ public class CsvConverterImpl implements ConverterInterface {
                 }
             }
         }
-        System.out.println("\nKonwertowanie do CSV zakończone powodzeniem!");
+        System.out.println("Konwertowanie do CSV zakończone powodzeniem!");
+        System.out.printf("Naliczono %d zdań i %d słów!%n", sentenceQuantity, wordsQuantity);
     }
 }
