@@ -192,7 +192,7 @@ public class SentenceTest {
         expected.add("understand");
         expected.add("word");
         //when
-        sentence.prepareSentence(sentenceText);
+        sentence.generate(sentenceText);
         //then
         assertEquals(sentenceText, sentence.getOriginalText());
         assertEquals(expected, sentence.getWordsList());

@@ -10,7 +10,7 @@ public class WordCounter {
         int maxNumberOfWOrds = 0;
         while (fileSentenceIterator.hasNext()) {
             Sentence sentence = new Sentence();
-            sentence.prepareSentence(fileSentenceIterator.next());
+            sentence.generate(fileSentenceIterator.next());
             if (sentence.getWordsList().size() > maxNumberOfWOrds) {
                 maxNumberOfWOrds = sentence.getWordsList().size();
             }

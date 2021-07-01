@@ -41,7 +41,7 @@ public class Sentence {
         return true;
     }
 
-    public void prepareSentence(String originalText) {
+    public void generate(String originalText) {
         this.originalText = originalText;
         this.wordList = sortWordList(splitSentenceIntoWords(prepareSentenceToSplit(originalText)));
     }
