@@ -20,6 +20,10 @@ You don't need to install Maven. Simply use the attached `mvnw` ([Maven Wrapper]
 
 ### Wykonał Paweł Drelich grupa ININ4_PR1.1 indeks 54589
 
+##### Jest to ulepszona/zmieniona/dostosowana do zaliczenia wersja programu jaki napisałem wcześniej, a dostepnego pod adresem: [SentenceConverter]
+
+[SentenceConverter]: https://github.com/Cutter72/SentenceConverter
+
 * Przedmiot: Programowanie w języku Java
 * Prowadzący: mgr inż. Kacper Warda
 
