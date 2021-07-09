@@ -3,6 +3,7 @@
 
 ##### Jest to ulepszona/zmieniona/dostosowana do zaliczenia wersja programu jaki napisałem wcześniej, a dostepnego pod adresem: [SentenceConverter]
 ##### Służy do przekształcania plików tekstowych na zdania i wyrazy zapisane potem do plików CSV i XML. Program porusza problem pracy z bardzo dużymi plikami.
+##### Aby uruchomić program prosze odpalić klasę Main w katalogu `src/main/java/pl/project/Main.java`.
 
 [SentenceConverter]: https://github.com/Cutter72/SentenceConverter
 * Przedmiot: Programowanie w języku Java
