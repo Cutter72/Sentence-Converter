@@ -1,15 +1,13 @@
+# Sentence converter (CSV, XML)
 
-### Wykonał Paweł Drelich grupa ININ4_PR1.1 indeks 54589
+Program for converting plain text into CSV and XML format. Input text is divided into sentences, sentences into words, then
+saved to CSV and XML format. Aim of this program is to show how large files could be handled when 
+heap memory may exceed. Program was written in TDD technique.
+* Technologies: Junit4, JAXB, Maven, CSV, XML, Git
 
-##### Jest to ulepszona/zmieniona/dostosowana do zaliczenia wersja programu jaki napisałem wcześniej, a dostepnego pod adresem: [SentenceConverter]
-##### Służy do przekształcania plików tekstowych na zdania i wyrazy zapisane potem do plików CSV i XML. Program porusza problem pracy z bardzo dużymi plikami.
-##### Aby uruchomić program prosze odpalić klasę Main w katalogu `src/main/java/pl/project/Main.java`.
+#### Launcher: `src/main/java/pl/project/Main.java`.
 
-[SentenceConverter]: https://github.com/Cutter72/SentenceConverter
-* Przedmiot: Programowanie w języku Java
-* Prowadzący: mgr inż. Kacper Warda
-
-##### W celu przetestowania aplikacji można użyć dołączonych plików `small.in` lub `large.in` z folderu `src/main/resources/sample_data/`
+#### For test program functionality, you can use delivered samples `small.in` or `large.in` from the path `src/main/resources/sample_data/`
 
 ## Prerequisites
 
